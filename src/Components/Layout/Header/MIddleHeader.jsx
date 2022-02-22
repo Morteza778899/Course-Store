@@ -39,14 +39,14 @@ const MiddleHeader = () => {
               <p className="top">همین امروز به ما زنگ بزن</p>
               <p className="bottom text-start">+98 911 488 0469</p>
             </div>
-            <span class="icon-phone-square mx-3"></span>
+            <span className="icon-phone-square mx-3"></span>
           </div>
           <div className="opening-time d-flex">
             <div>
               <p className="top">ساعات پاسخگویی ما</p>
               <p className="bottom">شنبه تا چهارشنبه - 8:00 تا 16:00</p>
             </div>
-            <span class="icon-time mx-2"></span>
+            <span className="icon-time mx-2"></span>
           </div>
         </div>
         <img src={logo} alt="logo" className="" />

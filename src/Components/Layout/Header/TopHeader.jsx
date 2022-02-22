@@ -88,6 +88,7 @@ const Div = styled.div`
 const TopHeader = () => {
   const [shopHidden, setShopHidden] = useState(false);
   const user = useSelector((state) => state.user);
+  console.log(user);
   return (
     <>
       <Div className="top-header">
@@ -129,8 +130,16 @@ const TopHeader = () => {
                   <NavLink to="/logout" className="log text-decoration-none">
                     خروج
                   </NavLink>
+                  {user.isAdmin && (
+                    <>
+                      <span className="text-white mx-1">|</span>
+                      <NavLink to="/dashboard" className="user-name text-decoration-none">
+                        داشبورد
+                      </NavLink>
+                    </>
+                  )}
                   <span className="text-white mx-1">|</span>
-                  <NavLink to="/dashbord" className="user-name text-decoration-none">
+                  <NavLink to="/profile" className="user-name text-decoration-none">
                     {user.fullname}
                   </NavLink>
                 </>

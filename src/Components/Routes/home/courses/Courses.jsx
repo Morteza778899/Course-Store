@@ -161,7 +161,7 @@ const Courses = () => {
                 <div className="card-body details">
                   <h4 className="card-title">{item.title}</h4>
                   <p className="card-text">{item.info}</p>
-                  <Link to={`/course/${item._id}`} class="btn btn-primary">
+                  <Link to={`/course/${item._id}`} className="btn btn-primary">
                     تماشای جزئیات
                   </Link>
                 </div>

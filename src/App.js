@@ -17,6 +17,7 @@ import { clearUser, setUser } from "./Redux/Action/userAction";
 import NotFound from "./Components/Routes/404/NotFound";
 import Dashboard from "./Components/Routes/dashboard/Dashboard";
 import CoursesDash from "./Components/Routes/dashboard/courses/CoursesDash";
+import VideoStream from "./VideoStream";
 const App = () => {
   const loading = useSelector((state) => state.loading);
   const user = useSelector((state) => state.user);
@@ -51,7 +52,7 @@ const App = () => {
         </div>
       ) : (
         <>
-          <BrowserRouter>
+          {/* <BrowserRouter>
             <MainLayout>
               <Routes>
                 <Route path="/" element={<HomePage />} />
@@ -71,7 +72,8 @@ const App = () => {
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </MainLayout>
-          </BrowserRouter>
+          </BrowserRouter> */}
+          <VideoStream/>
         </>
       )}
       <ToastContainer
